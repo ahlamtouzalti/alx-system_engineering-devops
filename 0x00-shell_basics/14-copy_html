@@ -1,11 +1,2 @@
 #!/bin/bash
-
-# Get the current working directory
-cwd=$(pwd)
-
-# Get the parent directory of the current working directory
-parent_dir=$(dirname "${cwd}")
-
-# Copy all HTML files from the current working directory to the parent directory
-cp -u "${cwd}"/*.html "${parent_dir}"
-
+cp -u *.html ..
